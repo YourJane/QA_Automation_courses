@@ -15,7 +15,7 @@
 
 #### Lorem ipsum dolor sit amet
 
-Lorem ipsum dolor sit amet, ius idque ubique ne.- [download](https://jmeter-plugins.org/install/Install/), [instruction](https://www.blazemeter.com/blog/how-install-jmeter-plugins-manager/).
+Lorem ipsum dolor sit amet, ius idque ubique ne.
 
 <details>
     <summary> Lorem ipsum dolor sit amet </summary>
@@ -39,7 +39,7 @@ No vocent vidisse consulatu duo, modo omnis nemore ne mei, ludus electram ne vim
 
 <details>
     <summary> No pro eruditi singulis elaboraret, ex vero alterum nonumes mel, eos eros quidam eu.... </summary>
-Mei ne verear lobortis, in pro posse definitiones. Ex solum exerci ignota usu, sit ut nonumy soluta.
+
 - impedit salutandi sea ad - **lorem ipsum**,
 - mei ne verear lobortis, in pro posse definitiones - **dolor sit amet**,
 - ex solum exerci ignota usu, sit ut nonumy soluta - **odio facilisis id mel**.
@@ -55,7 +55,7 @@ Lorem ipsum dolor sit amet, ius idque ubique ne, ne porro maluisset conclusionem
         <summary>Lorem</summary>
         ![img1](./images/img1.jpeg)
     </details>
-+ Postulant scribentur ad nam, oblique gloriatur eum id, eum id homero docendi. 
++ Postulant scribentur ad nam, oblique gloriatur eum id, eum id homero docendi.
     <details>
         <summary>Lorem</summary>
         ![img2](./images/img2.jpeg)
