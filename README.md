@@ -53,15 +53,15 @@ Lorem ipsum dolor sit amet, ius idque ubique ne, ne porro maluisset conclusionem
 + Vocent atomorum eu ius, est zril sensibus cu, et soluta interesset vel.
     <details>
         <summary>Lorem</summary>
-        ![img1]images/img1.jpeg)
+        ![img1](.images/img1.jpeg)
     </details>
 + Postulant scribentur ad nam, oblique gloriatur eum id, eum id homero docendi.
     <details>
         <summary>Lorem</summary>
-        ![img2](images/img2.jpeg)
+        ![img2](.images/img2.jpeg)
     </details>
 + Soleat ceteros abhorreant ex vix, no cibo percipit explicari eum, molestie consequat has id.
     <details>
         <summary>Lorem</summary>
-        ![img3](images/img3.jpeg)
+        ![img3](.images/img3.jpeg)
     </details>
