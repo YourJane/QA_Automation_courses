@@ -1,8 +1,8 @@
 ## Lorem ipsum
 
-- Lorem ipsum dolor sit amet - [тут](https://youtu.be/dQw4w9WgXcQ).
-- ius idque ubique ne, ne porro maluisset conclusionemque vel - [тут](https://9gag.com/gag/aGdDvLz?ref=ios).
-- everti vocibus nam eu - [тут](https://9gag.com/gag/arV4KBd?ref=ios).
+- Lorem ipsum dolor sit amet - [here](https://youtu.be/dQw4w9WgXcQ).
+- ius idque ubique ne, ne porro maluisset conclusionemque vel - [here](https://9gag.com/gag/aGdDvLz?ref=ios).
+- everti vocibus nam eu - [here](https://9gag.com/gag/arV4KBd?ref=ios).
 
 ## Lorem ipsum dolor sit ame
 
