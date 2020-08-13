@@ -8,7 +8,6 @@ public class Task_1 {
 
     public static int min(int[] integers) {
         int minValue = integers[0];
-        System.out.println("MIN" + minValue);
         for (int i = 0; i < integers.length; i++){
             if (integers[i] < minValue) {
                 minValue = integers[i];
