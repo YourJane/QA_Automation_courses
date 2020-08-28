@@ -2,10 +2,16 @@
 <suite name="FirstSuite">
     <parameter name="usersName" value="Jane"></parameter>
     <test name="FirstTest">
+        <groups>
+            <run>
+                <include name="goToRegistrationForm"/>
+            </run>
+        </groups>
         <classes>
-            <class name="test.java.testngTasks.Task_1_tests"></class>
-            <class name="test.java.testngTasks.Task_2_tests"></class>
-            <class name="test.java.testngTasks.Task_5_tests"></class>
+<!--            <class name="test.java.testngTasks.Task_1_tests"></class>-->
+<!--            <class name="test.java.testngTasks.Task_2_tests"></class>-->
+<!--            <class name="test.java.testngTasks.Task_5_tests"></class>-->
+            <class name="test.java.webDriverTasks.RozetkaTests"></class>
         </classes>
     </test>
 </suite>
