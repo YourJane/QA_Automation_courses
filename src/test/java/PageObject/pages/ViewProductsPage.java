@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import test.java.PageObject.utils.PropertyLoader;
 
 import java.util.List;
 
@@ -21,7 +22,7 @@ public class ViewProductsPage extends BasePage{
     @Override
     public ViewProductsPage open() {
         this.logger.info("View notebook page was open.");
-        driver.get("https://rozetka.com.ua/notebooks/c80004/");
+        driver.get(PropertyLoader.loadProperty("category.notebook.url"));
         return this;
     }
 
