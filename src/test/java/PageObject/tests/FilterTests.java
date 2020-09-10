@@ -2,7 +2,6 @@ package test.java.PageObject.tests;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test.java.PageObject.pages.ViewProductsPage;
 
@@ -18,7 +17,7 @@ public class FilterTests extends TestsSetup{
         viewProductsPage = new ViewProductsPage(driver);
     }
 
-    @Test(dataProvider = "brandsNames")
+    @Test
     public void FilterByBrand(String brandName){
         viewProductsPage
                 .open()
@@ -30,49 +29,6 @@ public class FilterTests extends TestsSetup{
                     actualResult.contains(brandName.toLowerCase()),
                     String.format("Expected %s to contain %s", actualResult, brandName));
         }
-    }
-
-    @DataProvider(name = "brandsNames")
-    public Object[][] provider() {
-        return new Object[][] {
-                {"blabla"},
-//                {"Acer"},
-//                {"Apple"},
-//                {"Asus"},
-//                {"Dell"},
-//                {"Dream Machines"},
-//                {"HP"},
-//                {"Huawei"},
-//                {"Lenovo"},
-//                {"MSI"},
-//                {"Microsoft"},
-//                {"Razer"},
-//                {"Xiaomi"},
-//                {"Alien"},
-//                {"Chuwi"},
-//                {"Compaq"},
-//                {"Digma"},
-//                {"Durabook"},
-//                {"Epic"},
-//                {"Fujitsu"},
-//                {"Fujitsu-siemens"},
-//                {"Gigabyte"},
-//                {"Google"},
-//                {"Jumper"},
-//                {"Mediacom"},
-//                {"Medion"},
-//                {"Mixzo"},
-//                {"NuVision"},
-//                {"Odys"},
-//                {"Panasonic"},
-//                {"Porsche Design"},
-//                {"Prestigio"},
-//                {"RCA"},
-//                {"Teclast"},
-//                {"Toshiba"},
-//                {"Vinga"},
-                {"Yepo"}
-        };
     }
 
 }

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import test.java.PageObject.utils.PropertyLoader;
 
 public class HomePage extends BasePage {
     WebDriver driver;
@@ -18,16 +19,12 @@ public class HomePage extends BasePage {
     }
 
     public HomePage open() {
-        this.logger.warn("Warn");
-        this.logger.error("Error");
         this.logger.info("Home page was opened");
-        driver.get("https://rozetka.com.ua/");
+        driver.get(PropertyLoader.loadProperty("baseurl"));
         return this;
     }
 
     public HomePage closePopup() {
-        this.logger.warn("Warn");
-        this.logger.error("Error");
         this.logger.info("Popup 'try language' was closed");
         wait.until(ExpectedConditions.elementToBeClickable(searchBtnBy));
         if (driver.findElement(langPopupBy).isDisplayed()) {

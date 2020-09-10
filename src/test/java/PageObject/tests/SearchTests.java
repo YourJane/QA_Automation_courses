@@ -2,7 +2,6 @@ package test.java.PageObject.tests;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test.java.PageObject.pages.HomePage;
 import test.java.PageObject.pages.ViewProductsPage;
@@ -21,7 +20,7 @@ public class SearchTests extends TestsSetup{
         viewProductsPage = new ViewProductsPage(driver);
     }
 
-    @Test(dataProvider = "searchQueriesNames")
+    @Test
     public void searchForProductByName(String query){
         homePage
                 .open()
@@ -49,14 +48,6 @@ public class SearchTests extends TestsSetup{
                     actualResult.contains("samsung"),
                     String.format("Expected %s to contain 'samsung'", actualResult));
         }
-    }
-
-    @DataProvider(name = "searchQueriesNames")
-    public Object[][] provider() {
-        return new Object[][] {
-                {"iPhone"},
-                {"Galaxy"},
-        };
     }
 
 }
