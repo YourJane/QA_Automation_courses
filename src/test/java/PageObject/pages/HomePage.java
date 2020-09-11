@@ -6,9 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import test.java.PageObject.utils.PropertyLoader;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
     WebDriver driver;
-    By searchInputBy = By.cssSelector("input[class='rz-header-search-input-text passive']");
+    By searchInputBy = By.cssSelector("input[class='rz-header-search-input-text passive']']");
     By searchBtnBy = By.cssSelector("button[class='btn-link-i js-rz-search-button']");
     By langPopupBy = By.cssSelector("div[class='popup-css lang-switcher-popup sprite-side']");
     By closePopupBtnBy = By.cssSelector("a[class='popup-close']");
@@ -25,11 +27,11 @@ public class HomePage extends BasePage {
     }
 
     public HomePage closePopup() {
-        this.logger.info("Popup 'try language' was closed");
-        wait.until(ExpectedConditions.elementToBeClickable(searchBtnBy));
-        if (driver.findElement(langPopupBy).isDisplayed()) {
+        List<WebElement> check = driver.findElements(langPopupBy);
+        if (check.size() > 0) {
             WebElement closePopupBtn = driver.findElement(closePopupBtnBy);
             closePopupBtn.click();
+            this.logger.info("Popup 'try language' was closed");
         }
         return this;
     }
