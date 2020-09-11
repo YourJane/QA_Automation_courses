@@ -1,24 +1,18 @@
-package lesson3;
+package main.java.lesson3;
 
 public class Task_2 {
     public static void main(String[] args) {
+        System.out.println(multipleName("Jane"));
+    }
 
-        String usersName = "Jane" + " ";
+    public static String multipleName(String usersName) {
         String joinedUsersName = "";
-
-        for (int i = 0; i < 10; i++) {
-            joinedUsersName += usersName;
-//            joinedUsersName += " ";
+        for (int r = 0; r < 5; r++) {
+            for (int i = 0; i < 10; i++) {
+                joinedUsersName += usersName + " ";
+            }
+            joinedUsersName += "\n";
         }
-
-        for (int i = 0; i < 5; i++) {
-            System.out.println(joinedUsersName);
-        }
-
-//       Alternative solution using one for and Collection:
-//        for (int i = 0; i < 5; i++) {
-//            String joinedUsersName = String.join(" ", Collections.nCopies(10, usersName));
-//            System.out.println(joinedUsersName);
-//        }
+        return joinedUsersName;
     }
 }

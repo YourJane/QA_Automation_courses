@@ -1,4 +1,4 @@
-package lesson3Advanced;
+package main.java.lesson3Advanced;
 
 public class Task_3 {
 
